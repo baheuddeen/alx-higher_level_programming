@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 import py_compile
 import os
+print(f"Compiling {os.environ['PYFILE']} ...")
 py_compile.compile(f"{os.environ['PYFILE']}", f"{os.environ['PYFILE']}c")
